@@ -7,8 +7,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Panda Food - Lava Rápido Expresso",
-  description: "Lava rápido rápido como um pato! Serviços expressos de lavagem com qualidade e agilidade",
+  title: "Panda Food - Lanches e Pastéis em Sorocaba",
+  description: "Deliciosos lanches artesanais e pastéis crocantes em Sorocaba. Peça pelo WhatsApp e receba com rapidez e qualidade!",
 };
 
 export default function RootLayout({
