@@ -2,6 +2,7 @@
 
 import { Clock, Users, Heart, Award, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import Footer from '../../components/Footer'
 
 export default function QuemSomos() {
   return (
@@ -164,6 +165,7 @@ export default function QuemSomos() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

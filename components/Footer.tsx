@@ -66,7 +66,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-3">Contato</h4>
             <p className="text-gray-300 text-sm leading-relaxed">
               <strong>Localização:</strong><br />
-              Sorocaba - SP
+              Rua Baltazar Fernandes, 383, Vila Santana - Sorocaba - SP
             </p>
             <p className="mt-3 text-gray-300 text-sm">
               <strong>WhatsApp:</strong> <span className="text-yellow-400">(15) 98134-5869</span>
