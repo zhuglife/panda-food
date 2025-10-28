@@ -4,7 +4,7 @@ import { Flame, Clock, Utensils, Heart } from 'lucide-react'
 
 // Função WhatsApp
 const abrirWhatsApp = () => {
-  const numero = '5515981345869'
+  const numero = '5515996654685'
   const mensagem = 'Olá! Gostaria de fazer um pedido no Panda Food 🍔'
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
   window.open(url, '_blank')

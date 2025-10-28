@@ -4,7 +4,7 @@ import { Instagram, Facebook, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   const abrirWhatsApp = () => {
-    const numero = '5515981345869'
+    const numero = '5515996654685'
     const mensagem = 'Olá! Gostaria de fazer um pedido no Panda Food 🍔'
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
     window.open(url, '_blank')

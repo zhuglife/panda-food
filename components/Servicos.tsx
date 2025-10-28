@@ -64,7 +64,7 @@ const cardapio = [
 
 // Função para abrir WhatsApp com pedido
 const abrirWhatsApp = (categoria: string) => {
-  const numero = '5515981345869'
+  const numero = '5515996654685'
   const mensagem = `Olá! Gostaria de fazer um pedido de ${categoria} 🍔`
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
   window.open(url, '_blank')
