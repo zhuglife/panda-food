@@ -1,13 +1,19 @@
 'use client'
 
-import Navegacao from '@/components/Navegacao'
-import { Clock, Users, Heart, Award } from 'lucide-react'
+import { Clock, Users, Heart, Award, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
 export default function QuemSomos() {
   return (
     <>
-      <Navegacao />
+      {/* Botão flutuante de voltar */}
+      <Link 
+        href="/"
+        className="fixed top-6 left-6 z-50 bg-white hover:bg-orange-50 text-orange-600 p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 border-2 border-orange-200"
+      >
+        <ArrowLeft className="h-6 w-6" />
+      </Link>
+
       <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           

@@ -14,7 +14,6 @@ export default function Home() {
       <div className="flex-1 pt-16">
         <Hero />
         <Servicos />
-        <Contato />
       </div>
 
       {/* Rodapé com dados legais */}

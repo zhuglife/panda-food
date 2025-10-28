@@ -54,12 +54,6 @@ export default function Navegacao() {
               Cardápio
             </button>
             <button 
-              onClick={() => scrollToSection('contato')}
-              className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
-            >
-              Contato
-            </button>
-            <button 
               onClick={abrirWhatsApp}
               className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors font-semibold flex items-center shadow-md"
             >
@@ -105,15 +99,6 @@ export default function Navegacao() {
                 className="block w-full text-left px-3 py-2 text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg font-medium transition-colors"
               >
                 Cardápio
-              </button>
-              <button 
-                onClick={() => {
-                  scrollToSection('contato')
-                  setMenuAberto(false)
-                }}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg font-medium transition-colors"
-              >
-                Contato
               </button>
               <button 
                 onClick={() => {
