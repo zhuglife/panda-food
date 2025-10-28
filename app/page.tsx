@@ -2,7 +2,6 @@ import Navegacao from '../components/Navegacao'
 import Hero from '../components/Hero'
 import Servicos from '../components/Servicos'
 import Contato from '../components/Contato'
-import ClientesSatisfeitos from '../components/ClientesSatisfeitos'
 import Footer from '../components/Footer'
 
 export default function Home() {

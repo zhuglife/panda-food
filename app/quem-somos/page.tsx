@@ -1,5 +1,8 @@
+'use client'
+
 import Navegacao from '@/components/Navegacao'
 import { Clock, Users, Heart, Award } from 'lucide-react'
+import Link from 'next/link'
 
 export default function QuemSomos() {
   return (
@@ -142,12 +145,16 @@ export default function QuemSomos() {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <a 
-              href="/#cardapio"
+            <Link 
+              href="/"
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.href = '/#cardapio'
+              }}
               className="inline-block bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-xl text-lg font-bold hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Conheça Nosso Cardápio 🍔
-            </a>
+            </Link>
           </div>
         </div>
       </div>

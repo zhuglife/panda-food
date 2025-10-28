@@ -1,14 +1,4 @@
 'use client'
-import { Sandwich, Flame, Cookie, Droplets, MessageCircle } from 'lucide-react'
-
-
-// Função para abrir WhatsApp com pedido
-const abrirWhatsApp = (categoria: string) => {
-  const numero = '5515996654685'
-  const mensagem = `Olá! Gostaria de fazer um pedido de ${categoria} 🍔`
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
-  window.open(url, '_blank')
-}
 
 export default function Cardapio() {
   return (
