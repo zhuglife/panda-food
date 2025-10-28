@@ -76,7 +76,7 @@ export default function Hero() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          No <strong className="text-orange-600">Panda Food</strong>, preparamos lanches artesanais e pastéis crocantes
+          Na <strong className="text-orange-600">Panda Food</strong>, preparamos lanches artesanais e pastéis crocantes
           com ingredientes frescos e muito sabor. Do clássico ao especial, temos o lanche
           perfeito para matar sua fome!
         </p>
