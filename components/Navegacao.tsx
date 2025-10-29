@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Menu, X, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
-
+import Image from 'next/image';
 // Função WhatsApp
 const abrirWhatsApp = () => {
   const numero = '5515996654685'
@@ -29,8 +29,14 @@ export default function Navegacao() {
         <div className="flex justify-between items-center h-20">
           {/* Logo Panda Food */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-full p-2 group-hover:scale-110 transition-transform shadow-md">
-              <span className="text-3xl">🐼</span>
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+              <Image
+                src="/logo.png"
+                alt="Panda Food Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl md:text-2xl font-bold text-gray-900">
@@ -38,7 +44,6 @@ export default function Navegacao() {
               </h1>
             </div>
           </Link>
-
           {/* Menu Desktop */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
@@ -47,13 +52,13 @@ export default function Navegacao() {
             <Link href="/quem-somos" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
               Quem Somos
             </Link>
-            <button 
+            <button
               onClick={() => scrollToSection('cardapio')}
               className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
             >
               Cardápio
             </button>
-            <button 
+            <button
               onClick={abrirWhatsApp}
               className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors font-semibold flex items-center shadow-md"
             >
@@ -77,21 +82,21 @@ export default function Navegacao() {
         {menuAberto && (
           <div className="md:hidden border-t border-orange-100 bg-white">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link 
+              <Link
                 href="/"
                 className="block px-3 py-2 text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg font-medium transition-colors"
                 onClick={() => setMenuAberto(false)}
               >
                 Início
               </Link>
-              <Link 
+              <Link
                 href="/quem-somos"
                 className="block px-3 py-2 text-gray-700 hover:text-orange-500 hover:bg-orange-50 rounded-lg font-medium transition-colors"
                 onClick={() => setMenuAberto(false)}
               >
                 Quem Somos
               </Link>
-              <button 
+              <button
                 onClick={() => {
                   scrollToSection('cardapio')
                   setMenuAberto(false)
@@ -100,7 +105,7 @@ export default function Navegacao() {
               >
                 Cardápio
               </button>
-              <button 
+              <button
                 onClick={() => {
                   abrirWhatsApp()
                   setMenuAberto(false)

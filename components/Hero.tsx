@@ -2,7 +2,7 @@
 
 import { Flame, Clock, Utensils, Heart, Sparkles } from 'lucide-react'
 import { useState, useEffect } from 'react'
-
+import Image from 'next/image';
 // Função WhatsApp
 const abrirWhatsApp = () => {
   const numero = '5515981345869'
@@ -43,25 +43,10 @@ export default function Hero() {
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
-        {/* Logo Panda animado */}
-        <div 
-          className={`mb-8 flex justify-center transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
-          }`}
-        >
-          <div className="bg-white rounded-full p-4 shadow-lg relative group hover:scale-110 transition-transform duration-300 cursor-pointer">
-            <span className="text-6xl animate-pulse">🐼</span>
-            {/* Sparkles ao redor */}
-            <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-yellow-400 animate-spin-slow" />
-            <Sparkles className="absolute -bottom-2 -left-2 h-5 w-5 text-orange-400 animate-ping" />
-          </div>
-        </div>
-
         {/* Título animado */}
-        <h1 
-          className={`text-4xl md:text-6xl font-bold text-gray-900 mb-6 transition-all duration-1000 delay-200 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+        <h1
+          className={`text-4xl md:text-6xl font-bold text-gray-900 mb-6 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           Lanches e Pastéis{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 animate-gradient">
@@ -71,10 +56,9 @@ export default function Hero() {
         </h1>
 
         {/* Descrição animada */}
-        <p 
-          className={`text-xl text-gray-600 mb-10 leading-relaxed transition-all duration-1000 delay-400 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+        <p
+          className={`text-xl text-gray-600 mb-10 leading-relaxed transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           Na <strong className="text-orange-600">Panda Food</strong>, preparamos lanches artesanais e pastéis crocantes
           com ingredientes frescos e muito sabor. Do clássico ao especial, temos o lanche
@@ -82,10 +66,9 @@ export default function Hero() {
         </p>
 
         {/* Botões animados */}
-        <div 
-          className={`flex flex-col sm:flex-row justify-center gap-4 mb-12 transition-all duration-1000 delay-600 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+        <div
+          className={`flex flex-col sm:flex-row justify-center gap-4 mb-12 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <button
             onClick={abrirWhatsApp}
@@ -95,7 +78,7 @@ export default function Hero() {
             <Flame className="h-5 w-5 mr-2 group-hover:animate-bounce" />
             Fazer Pedido Agora
           </button>
-          <button 
+          <button
             onClick={scrollToCardapio}
             className="border-2 border-orange-500 text-orange-600 px-8 py-4 rounded-xl text-lg font-bold hover:bg-orange-50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
@@ -105,32 +88,29 @@ export default function Hero() {
 
         {/* Características animadas */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
-          <div 
-            className={`bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+          <div
+            className={`bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
             style={{ transitionDelay: '800ms' }}
           >
             <Utensils className="h-10 w-10 text-orange-500 mx-auto mb-3 hover:rotate-12 transition-transform duration-300" />
             <p className="font-semibold text-gray-800">Ingredientes Frescos</p>
             <p className="text-sm text-gray-600 mt-1">Qualidade em cada mordida</p>
           </div>
-          
-          <div 
-            className={`bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+
+          <div
+            className={`bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
             style={{ transitionDelay: '1000ms' }}
           >
             <Clock className="h-10 w-10 text-yellow-500 mx-auto mb-3 hover:rotate-12 transition-transform duration-300" />
             <p className="font-semibold text-gray-800">Preparado na Hora</p>
             <p className="text-sm text-gray-600 mt-1">Sempre quentinho pra você</p>
           </div>
-          
-          <div 
-            className={`bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+
+          <div
+            className={`bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
             style={{ transitionDelay: '1200ms' }}
           >
             <Heart className="h-10 w-10 text-pink-500 mx-auto mb-3 hover:scale-110 transition-transform duration-300" />
