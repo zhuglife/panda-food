@@ -1,5 +1,4 @@
 'use client'
-
 import { Instagram, Facebook, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
@@ -14,7 +13,6 @@ export default function Footer() {
     <footer className="bg-gradient-to-br from-gray-900 via-orange-900 to-gray-900 text-gray-100 py-12 mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 border-b border-orange-700/30 pb-8">
-
           {/* Logo e Descrição */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-2">
@@ -33,14 +31,18 @@ export default function Footer() {
                 <MessageCircle className="h-5 w-5 text-white" />
               </button>
               <a 
-                href="#" 
+                href="https://www.instagram.com/pandafoodlancheria/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-pink-500 hover:bg-pink-600 p-2 rounded-full transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://www.facebook.com/people/Panda-Food-lancheria/100087427849118/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-blue-500 hover:bg-blue-600 p-2 rounded-full transition-colors"
                 aria-label="Facebook"
               >
@@ -48,7 +50,6 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
           {/* Informações da Empresa */}
           <div>
             <h4 className="text-lg font-semibold text-white mb-3">Dados da Empresa</h4>
@@ -60,7 +61,6 @@ export default function Footer() {
               <strong>Situação:</strong> Ativa desde 12/01/2011
             </p>
           </div>
-
           {/* Contato e Horário */}
           <div>
             <h4 className="text-lg font-semibold text-white mb-3">Contato</h4>
@@ -73,13 +73,10 @@ export default function Footer() {
             </p>
             <p className="mt-3 text-gray-300 text-sm">
               <strong>Horário de Funcionamento:</strong><br />
-              Seg a Sex: 18h às 23h<br />
-              Sábados: 18h às 00h<br />
-              Domingos: 18h às 23h
+              Seg a Sab: 14h às 23h<br />
             </p>
           </div>
         </div>
-
         {/* Créditos e Direitos */}
         <div className="text-center text-gray-400 text-sm mt-6">
           <p>
